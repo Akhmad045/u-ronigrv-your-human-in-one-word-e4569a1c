@@ -9,9 +9,10 @@ not a boss with a to-do list; he is a quest giver. One word for him:
 
     Sidequester
 
-This program writes that one word to /output/entry.txt so the judge
-can read it. Stdlib only. No network, no secrets, nothing read from
-anywhere else.
+11 characters, 11 bytes, plain ASCII — one token, no spaces, no
+newline. This program writes that one word to /output/entry.txt so
+the judge can read it. Stdlib only. No network, no secrets, nothing
+read from anywhere else.
 """
 
 import sys
@@ -70,6 +71,7 @@ def run_checks():
         (WORD, True),
         ("x", True),
         ("a" * LIMIT, True),
+        ("side-quester", True),
         ("", False),
         ("   ", False),
         ("a" * (LIMIT + 1), False),
